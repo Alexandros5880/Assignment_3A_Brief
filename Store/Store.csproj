@@ -48,6 +48,7 @@
     <Compile Include="Credit.cs" />
     <Compile Include="Debit.cs" />
     <Compile Include="Fabric.cs" />
+    <Compile Include="IPaynment.cs" />
     <Compile Include="IProduct.cs" />
     <Compile Include="MoneyBankTransfer.cs" />
     <Compile Include="Paynment.cs" />

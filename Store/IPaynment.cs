@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Store
 {
-    public abstract class Paynment : IPaynment
+    interface IPaynment
     {
-        
     }
 }
