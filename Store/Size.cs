@@ -16,5 +16,10 @@ namespace Store
             this.Id = id;
             this.Name = name;
         }
+
+        public override string ToString()
+        {
+            return $"ID[{this.Id}] Name: {this.Name}";
+        }
     }
 }

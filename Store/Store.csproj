@@ -41,18 +41,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Card.cs" />
+    <Compile Include="Cash.cs" />
+    <Compile Include="Cloth.cs" />
     <Compile Include="Color.cs" />
+    <Compile Include="Credit.cs" />
+    <Compile Include="Debit.cs" />
     <Compile Include="Fabric.cs" />
+    <Compile Include="IProduct.cs" />
+    <Compile Include="MoneyBankTransfer.cs" />
+    <Compile Include="Paynment.cs" />
     <Compile Include="Product.cs" />
-    <Compile Include="ProductFuctory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Size.cs" />
     <Compile Include="TShirt.cs" />
-    <Compile Include="TShirtFuctory.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Diagram\ClassDiagram1.cd" />
+    <Folder Include="Diagram\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

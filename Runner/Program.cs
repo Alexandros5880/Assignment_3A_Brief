@@ -12,9 +12,7 @@ namespace Runner
         static void Main(string[] args)
         {
 
-            ProductFuctory tshirtFuctory = new TShirtFuctory();
-            Product tshirt = tshirtFuctory.GetProduct();
-            Console.WriteLine(tshirt.ToString());
+            
 
             Console.ReadKey();
 

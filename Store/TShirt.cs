@@ -8,10 +8,15 @@ namespace Store
 {
     public class TShirt : Product
     {
-        public TShirt(string brand, Color color, Size size, Fabric fabric) : 
-            base(brand, color, size, fabric)
-        {
+        public override Paynment paynment 
+        { 
+            get => throw new NotImplementedException(); 
+            set => throw new NotImplementedException(); 
+        }
 
+        public TShirt()
+        {
+            
         }
     }
 }

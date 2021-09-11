@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Store
 {
-    public abstract class ProductFuctory
+    public class Debit : Card
     {
-        public abstract Product GetProduct();
     }
 }

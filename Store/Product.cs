@@ -6,24 +6,19 @@ using System.Threading.Tasks;
 
 namespace Store
 {
-    public abstract class Product
+    public abstract class Product : IProduct
     {
-        public Color Color { get; set; }
-        public Size Size { get; set; }
-        public Fabric Fabric { get; set; }
-        public string Brand { get; set; }
+        
+        public abstract Paynment paynment { get; set; }
 
-        public Product(string brand, Color color, Size size, Fabric fabric)
+        public Product()
         {
-            this.Brand = brand;
-            this.Color = color;
-            this.Size = size;
-            this.Fabric = fabric;
+
         }
 
-        public override string ToString()
+        public String GetPaynmentMethod()
         {
-            return $"Brand: {this.Brand}, Color: {this.Color.Name}, Size: {this.Size.Name}, Fabric: {this.Fabric.Name}";
+            return this.paynment.ToString();
         }
     }
 }

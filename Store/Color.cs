@@ -19,5 +19,10 @@ namespace Store
             this.Hex = hex;
         }
 
+        public override string ToString()
+        {
+            return $"ID[{this.Id}] Name: {this.Name} Hex: {this.Hex}";
+        }
+
     }
 }
