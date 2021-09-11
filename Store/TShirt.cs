@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Store
 {
-    public class TShirt : Product
+    public class TShirt : Cloth
     {
         public override Paynment paynment 
         { 
