@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Store
 {
-    class Cash : Paynment
+    public class DebitCard : Card
     {
     }
 }

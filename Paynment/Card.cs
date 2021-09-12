@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Store
+namespace Paynment
 {
-    public class Credit : Card
+    public abstract class Card : Paynment
     {
     }
 }

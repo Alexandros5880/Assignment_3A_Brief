@@ -3,22 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PaynmentClasses;
 
 namespace Store
 {
     public abstract class Product : IProduct
     {
-        
-        public abstract Paynment paynment { get; set; }
-
-        public Product()
+        public int Id { get; set; }
+        public List<Paynment> PaynmentMethods { get; private set; } = new List<Paynment>();
+        public bool AddPaynmentMethod(Paynment paynment)
         {
-
+            if(!this.PaynmentMethods.Any(item => item.Type == paynment.Type))
+            {
+                this.PaynmentMethods.Add(paynment);
+            }
+            return this.PaynmentMethods.Any(item => item.Type == paynment.Type);
         }
-
-        public String GetPaynmentMethod()
+        public bool RemovePaynmentMethod(Paynment paynment)
         {
-            return this.paynment.ToString();
+            if(this.PaynmentMethods.Any(item => item.Type == paynment.Type))
+            {
+                this.PaynmentMethods.Remove(paynment);
+            }
+            return this.PaynmentMethods.Any(item => item.Type == paynment.Type);
         }
     }
 }

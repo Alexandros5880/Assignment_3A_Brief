@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Store
+namespace PaynmentClasses
 {
-    public abstract class Paynment : IPaynment
+    public class Cash : Paynment
     {
-        
     }
 }

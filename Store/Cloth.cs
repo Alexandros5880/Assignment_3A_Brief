@@ -12,11 +12,12 @@ namespace Store
         public Size Size { get; set; }
         public Fabric Fabric { get; set; }
         public string Brand { get; set; }
-
-        public override string ToString()
+        public Cloth(Color color, Size size, Fabric fabric, string brand)
         {
-            return $"Brand: {this.Brand}, Color: {this.Color.Name}, Size: {this.Size.Name}, Fabric: {this.Fabric.Name}";
+            this.Color = color;
+            this.Size = size;
+            this.Fabric = fabric;
+            this.Brand = brand;
         }
-
     }
 }

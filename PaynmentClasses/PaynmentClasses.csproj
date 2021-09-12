@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{99C1B542-C677-4EDC-A2A6-CB3C1F1D6CF0}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Runner</RootNamespace>
-    <AssemblyName>Runner</AssemblyName>
+    <ProjectGuid>{00E3F064-54B6-4522-826B-9CE3321967C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PaynmentClasses</RootNamespace>
+    <AssemblyName>PaynmentClasses</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,21 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="Cash.cs" />
+    <Compile Include="CreditCard.cs" />
+    <Compile Include="DebitCard.cs" />
+    <Compile Include="IPaynment.cs" />
+    <Compile Include="MoneyBankTransfer.cs" />
+    <Compile Include="Paynment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PaynmentClasses\PaynmentClasses.csproj">
-      <Project>{00e3f064-54b6-4522-826b-9ce3321967c5}</Project>
-      <Name>PaynmentClasses</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Store\Store.csproj">
-      <Project>{bb9bdbdb-4a1d-4578-82cc-9d05ea646287}</Project>
-      <Name>Store</Name>
-    </ProjectReference>
+    <Folder Include="Diagram\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

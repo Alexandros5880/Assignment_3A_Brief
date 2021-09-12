@@ -1,103 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Store.Card" Collapsed="true">
-    <Position X="0.75" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Card.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Store.Cash" Collapsed="true">
-    <Position X="2.5" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Cash.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Store.Cloth">
-    <Position X="8.5" Y="0.5" Width="1.5" />
+    <Position X="3" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="Store.Product" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="3.22" />
+        <Point X="2.375" Y="3.22" />
+        <Point X="2.375" Y="0.688" />
+        <Point X="3" Y="0.688" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AEAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAAgAABAAA=</HashCode>
+      <HashCode>AEAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAABAAA=</HashCode>
       <FileName>Cloth.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Store.Color">
-    <Position X="10.5" Y="0.5" Width="1.5" />
+    <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAgEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Color.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Store.Credit" Collapsed="true">
-    <Position X="0.75" Y="4.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Credit.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Store.Debit" Collapsed="true">
-    <Position X="2.5" Y="4.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Debit.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Store.Fabric">
-    <Position X="10.5" Y="4.75" Width="1.5" />
+    <Position X="9.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Fabric.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Store.MoneyBankTransfer" Collapsed="true">
-    <Position X="4.25" Y="2.75" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MoneyBankTransfer.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Store.Paynment" Collapsed="true">
-    <Position X="2.5" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Paynment.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
   <Class Name="Store.Product">
-    <Position X="6.5" Y="2" Width="1.5" />
+    <Position X="0.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAACAAEAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>Product.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Store.Size">
-    <Position X="10.5" Y="2.75" Width="1.5" />
+    <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Size.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Store.TShirt">
-    <Position X="8.5" Y="3.5" Width="1.5" />
+    <Position X="3" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TShirt.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="Store.IProduct">
-    <Position X="6.5" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>IProduct.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="Store.IPaynment" Collapsed="true">
-    <Position X="2.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IPaynment.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

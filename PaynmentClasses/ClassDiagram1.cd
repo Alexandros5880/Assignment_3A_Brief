@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PaynmentClasses.Card" Collapsed="true">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Card.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PaynmentClasses.Cash" Collapsed="true">
+    <Position X="2.75" Y="1.5" Width="1.5" />
+    <InheritanceLine Type="PaynmentClasses.Paynment" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="2.438" />
+        <Point X="2.292" Y="2.438" />
+        <Point X="2.292" Y="1.846" />
+        <Point X="2.75" Y="1.846" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PaynmentClasses.CreditCard" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="PaynmentClasses.Card" FixedFromPoint="true">
+      <Path>
+        <Point X="3.562" Y="3.191" />
+        <Point X="3.562" Y="3.45" />
+        <Point X="4.75" Y="3.45" />
+        <Point X="4.75" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreditCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PaynmentClasses.DebitCard" Collapsed="true">
+    <Position X="2" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="PaynmentClasses.Card" FixedFromPoint="true">
+      <Path>
+        <Point X="3.438" Y="3.191" />
+        <Point X="3.438" Y="3.45" />
+        <Point X="2.75" Y="3.45" />
+        <Point X="2.75" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DebitCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PaynmentClasses.MoneyBankTransfer" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="PaynmentClasses.Paynment" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="2.25" />
+        <Point X="2.177" Y="2.25" />
+        <Point X="2.177" Y="0.812" />
+        <Point X="2.75" Y="0.812" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MoneyBankTransfer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PaynmentClasses.Paynment">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Paynment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="PaynmentClasses.IPaynment">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPaynment.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
