@@ -50,11 +50,9 @@
     <Compile Include="Size.cs" />
     <Compile Include="TShirt.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Diagram\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="Diagram\ProductsDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PaynmentClasses\PaynmentClasses.csproj">
