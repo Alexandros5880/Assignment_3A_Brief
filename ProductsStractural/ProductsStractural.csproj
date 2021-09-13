@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{00E3F064-54B6-4522-826B-9CE3321967C5}</ProjectGuid>
+    <ProjectGuid>{841B20A3-AA24-4343-9057-69A56BA002C3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PaynmentClasses</RootNamespace>
-    <AssemblyName>PaynmentClasses</AssemblyName>
+    <RootNamespace>ProductsStractural</RootNamespace>
+    <AssemblyName>ProductsStractural</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,18 +41,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Card.cs" />
-    <Compile Include="Cash.cs" />
-    <Compile Include="CreditCard.cs" />
-    <Compile Include="DebitCard.cs" />
-    <Compile Include="IPaynment.cs" />
-    <Compile Include="MoneyBankTransfer.cs" />
-    <Compile Include="Paynment.cs" />
+    <Compile Include="Cloth.cs" />
+    <Compile Include="ClotheGenerator.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="Fabric.cs" />
+    <Compile Include="IProduct.cs" />
+    <Compile Include="IProductGenerator.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductsGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Size.cs" />
+    <Compile Include="TShirt.cs" />
+    <Compile Include="TShirtGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Diagram\PaynmentDiagram.cd" />
+    <ProjectReference Include="..\PaynmentsStructural\PaynmentsStractural.csproj">
+      <Project>{a043b635-972c-434c-abe3-1a8b133149b1}</Project>
+      <Name>PaynmentsStractural</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

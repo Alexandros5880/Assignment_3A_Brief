@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PaynmentClasses
+namespace PaynmentsStractural
 {
-    public abstract class Card : Paynment
+    public class DebitCard : Card
     {
     }
 }

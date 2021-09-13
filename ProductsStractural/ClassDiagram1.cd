@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProductsStractural.Cloth">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAAgAABAAA=</HashCode>
+      <FileName>Cloth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductsStractural.ClotheGenerator">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAQAAAAAAAAIAIAEAAAAAAAACBAAiCAABAAAA=</HashCode>
+      <FileName>ClotheGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductsStractural.Color">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Color.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductsStractural.Fabric">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fabric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductsStractural.Product">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProductsStractural.ProductsGenerator">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductsGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProductsStractural.Size">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Size.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductsStractural.TShirt">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="ProductsStractural.Cloth" FixedFromPoint="true">
+      <Path>
+        <Point X="5.75" Y="4.062" />
+        <Point X="5.878" Y="4.062" />
+        <Point X="5.878" Y="1.372" />
+        <Point X="5.872" Y="1.372" />
+        <Point X="5.872" Y="1.213" />
+        <Point X="6" Y="1.213" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TShirt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductsStractural.TShirtGenerator">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="ProductsStractural.ClotheGenerator" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="3.375" />
+        <Point X="2.123" Y="3.375" />
+        <Point X="2.123" Y="1.116" />
+        <Point X="2.25" Y="1.116" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TShirtGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ProductsStractural.IProduct" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>IProduct.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProductsStractural.IProductGenerator" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IProductGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

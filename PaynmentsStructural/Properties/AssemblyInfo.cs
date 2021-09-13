@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Store")]
+[assembly: AssemblyTitle("PaynmentsStructural")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Store")]
+[assembly: AssemblyProduct("PaynmentsStructural")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("bb9bdbdb-4a1d-4578-82cc-9d05ea646287")]
+[assembly: Guid("a043b635-972c-434c-abe3-1a8b133149b1")]
 
 // Version information for an assembly consists of the following four values:
 //

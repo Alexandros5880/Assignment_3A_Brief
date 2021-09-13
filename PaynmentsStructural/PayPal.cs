@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PaynmentClasses
+namespace PaynmentsStractural
 {
-    interface IPaynment
+    public class PayPal : Paynment
     {
     }
 }

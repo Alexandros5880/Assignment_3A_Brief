@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PaynmentClasses;
+using PaynmentsStractural;
 
-namespace Store
+namespace ProductsStractural
 {
     public interface IProduct
     {

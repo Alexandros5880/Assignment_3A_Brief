@@ -50,13 +50,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PaynmentClasses\PaynmentClasses.csproj">
-      <Project>{00e3f064-54b6-4522-826b-9ce3321967c5}</Project>
-      <Name>PaynmentClasses</Name>
+    <ProjectReference Include="..\PaynmentsStructural\PaynmentsStractural.csproj">
+      <Project>{a043b635-972c-434c-abe3-1a8b133149b1}</Project>
+      <Name>PaynmentsStractural</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Store\Store.csproj">
-      <Project>{bb9bdbdb-4a1d-4578-82cc-9d05ea646287}</Project>
-      <Name>Store</Name>
+    <ProjectReference Include="..\ProductsStractural\ProductsStractural.csproj">
+      <Project>{841b20a3-aa24-4343-9057-69a56ba002c3}</Project>
+      <Name>ProductsStractural</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

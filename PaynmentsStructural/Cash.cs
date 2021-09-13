@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PaynmentClasses
+namespace PaynmentsStractural
 {
-    public class MoneyBankTransfer : Paynment
+    public class Cash : Paynment
     {
+        
     }
 }
