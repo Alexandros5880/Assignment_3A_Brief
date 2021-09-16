@@ -27,16 +27,7 @@ namespace Runner
             Console.WriteLine( paynment_4.ToString() );
             Console.WriteLine( paynment_5.ToString() );
             Console.WriteLine( paynment_6.ToString() );
-
-            /*
-            Console.WriteLine("");
-
-            string[] types = Paynment.GetTypes();
-            foreach(string t in types)
-            {
-                Console.WriteLine(t);
-            }
-            */
+            
 
             Console.ReadKey();
 

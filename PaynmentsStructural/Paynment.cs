@@ -120,19 +120,6 @@ namespace PaynmentsStractural
             this.Type = this.GetType().Name;
         }
 
-        public static string[] GetTypes()
-        {
-            Type[] myTypes = (Type[])Assembly.GetAssembly(typeof(Paynment)).GetTypes().Where(
-                    TheType => TheType.IsClass && !TheType.IsAbstract && TheType.IsSubclassOf(typeof(Paynment))
-                ).ToArray();
-            List<string> types = new List<string>();
-            foreach (Type type in myTypes)
-            {
-                types.Add(type.Name);
-            }
-            return types.ToArray();
-        }
-
         public override string ToString()
         {
             return this.Type;
