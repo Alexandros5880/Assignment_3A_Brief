@@ -40,12 +40,6 @@
   </Class>
   <Class Name="PaynmentsStractural.IBAN" Collapsed="true">
     <Position X="0.5" Y="5.75" Width="1.5" />
-    <InheritanceLine Type="PaynmentsStractural.BankTransfer" FixedToPoint="true">
-      <Path>
-        <Point X="1.25" Y="5.425" />
-        <Point X="1.25" Y="5.75" />
-      </Path>
-    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IBAN.cs</FileName>

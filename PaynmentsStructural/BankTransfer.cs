@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PaynmentsStractural
 {
-    public abstract class BankTransfer : Paynment
+    internal abstract class BankTransfer : Paynment
     {
         public void Recceipt()
         {

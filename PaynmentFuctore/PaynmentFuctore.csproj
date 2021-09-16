@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A043B635-972C-434C-ABE3-1A8B133149B1}</ProjectGuid>
+    <ProjectGuid>{7434FCE9-5CEB-4621-A8E2-646590358F17}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PaynmentsStructural</RootNamespace>
-    <AssemblyName>PaynmentsStructural</AssemblyName>
+    <RootNamespace>PaynmentFuctore</RootNamespace>
+    <AssemblyName>PaynmentFuctore</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,21 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Card.cs" />
-    <Compile Include="Cash.cs" />
-    <Compile Include="CreditCard.cs" />
-    <Compile Include="DebitCard.cs" />
     <Compile Include="GetPaynment.cs" />
-    <Compile Include="IBAN.cs" />
-    <Compile Include="IPaynment.cs" />
-    <Compile Include="BankTransfer.cs" />
-    <Compile Include="Paynment.cs" />
-    <Compile Include="PayPal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebPaynment.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <ProjectReference Include="..\PaynmentsStructural\PaynmentsStractural.csproj">
+      <Project>{a043b635-972c-434c-abe3-1a8b133149b1}</Project>
+      <Name>PaynmentsStractural</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PaynmentsStractural
 {
-    public class Cash : Paynment
+    internal class Cash : Paynment
     {
         
     }

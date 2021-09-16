@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PaynmentsStractural
 {
-    public class DebitCard : Card
+    internal class DebitCard : Card
     {
     }
 }

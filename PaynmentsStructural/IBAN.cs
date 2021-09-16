@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PaynmentsStractural
 {
-    public class IBAN : BankTransfer
+    internal class IBAN : BankTransfer
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PaynmentsStractural
 {
-    public class PayPal : Paynment
+    internal class PayPal : Paynment
     {
     }
 }

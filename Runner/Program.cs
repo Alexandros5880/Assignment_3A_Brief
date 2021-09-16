@@ -14,12 +14,12 @@ namespace Runner
         static void Main(string[] args)
         {
 
-            Paynment paynment_1 = new IBAN();
-            Paynment paynment_2 = new PayPal();
-            Paynment paynment_3 = new DebitCard();
-            Paynment paynment_4 = new CreditCard();
-            Paynment paynment_5 = new Cash();
-            Paynment paynment_6 = new WebPaynment();
+            Paynment paynment_1 = GetPaynment.GetIBAN();
+            Paynment paynment_2 = GetPaynment.GetPayPal();
+            Paynment paynment_3 = GetPaynment.GetDebitCard();
+            Paynment paynment_4 = GetPaynment.GetCreditCard();
+            Paynment paynment_5 = GetPaynment.GetCash();
+            Paynment paynment_6 = GetPaynment.GetWebPaynment();
 
             Console.WriteLine( paynment_1.ToString() );
             Console.WriteLine( paynment_2.ToString() );
@@ -28,6 +28,7 @@ namespace Runner
             Console.WriteLine( paynment_5.ToString() );
             Console.WriteLine( paynment_6.ToString() );
 
+            /*
             Console.WriteLine("");
 
             string[] types = Paynment.GetTypes();
@@ -35,6 +36,7 @@ namespace Runner
             {
                 Console.WriteLine(t);
             }
+            */
 
             Console.ReadKey();
 

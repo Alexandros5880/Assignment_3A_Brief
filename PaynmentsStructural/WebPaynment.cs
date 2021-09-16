@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PaynmentsStractural
 {
-    public class WebPaynment : Paynment
+    internal class WebPaynment : Paynment
     {
 
         public string User { get; set; }
