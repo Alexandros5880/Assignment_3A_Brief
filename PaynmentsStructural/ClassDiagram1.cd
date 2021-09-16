@@ -77,6 +77,13 @@
       <FileName>WebPaynment.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="PaynmentsStractural.GetPaynment">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAgAAAAAAAABAAAAABAAQAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>GetPaynment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="PaynmentsStractural.IPaynment" Collapsed="true">
     <Position X="2.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
