@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="public: Paynment, GetPaynment.&#xD;&#xA;internal: all others">
+    <Position X="2.455" Y="2.846" Height="0.391" Width="2.203" />
+  </Comment>
   <Class Name="PaynmentsStractural.BankTransfer">
     <Position X="0.5" Y="4" Width="1.5" />
     <TypeIdentifier>
