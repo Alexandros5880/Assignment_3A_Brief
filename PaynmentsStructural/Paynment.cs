@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -113,10 +114,25 @@ namespace PaynmentsStractural
             ZWL = 932
         }
         public string Type { get; protected set; }
+
         public Paynment()
         {
             this.Type = this.GetType().Name;
         }
+
+        public static string[] GetTypes()
+        {
+            Type[] myTypes = (Type[])Assembly.GetAssembly(typeof(Paynment)).GetTypes().Where(
+                    TheType => TheType.IsClass && !TheType.IsAbstract && TheType.IsSubclassOf(typeof(Paynment))
+                ).ToArray();
+            List<string> types = new List<string>();
+            foreach (Type type in myTypes)
+            {
+                types.Add(type.Name);
+            }
+            return types.ToArray();
+        }
+
         public override string ToString()
         {
             return this.Type;

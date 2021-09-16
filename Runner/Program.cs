@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using PaynmentsStractural;
@@ -13,21 +14,27 @@ namespace Runner
         static void Main(string[] args)
         {
 
+            Paynment paynment_1 = new IBAN();
+            Paynment paynment_2 = new PayPal();
+            Paynment paynment_3 = new DebitCard();
+            Paynment paynment_4 = new CreditCard();
+            Paynment paynment_5 = new Cash();
+            Paynment paynment_6 = new WebPaynment();
 
+            Console.WriteLine( paynment_1.ToString() );
+            Console.WriteLine( paynment_2.ToString() );
+            Console.WriteLine( paynment_3.ToString() );
+            Console.WriteLine( paynment_4.ToString() );
+            Console.WriteLine( paynment_5.ToString() );
+            Console.WriteLine( paynment_6.ToString() );
 
-            Color color = new Color(1, "Green", "#23FF00");
-            Size size = new Size(1, "M");
-            Fabric fabric = new Fabric(1, "WOOL");
-            string brand = "NOTYCA";
-            Product tshirt = new TShirt(color, size, fabric ,brand);
+            Console.WriteLine("");
 
-            tshirt.AddPaynmentMethod(new CreditCard());
-            tshirt.AddPaynmentMethod(new DebitCard());
-            tshirt.AddPaynmentMethod(new MoneyBankTransfer());
-            tshirt.AddPaynmentMethod(new Cash());
-
-            Console.WriteLine(tshirt.ToString());
-            
+            string[] types = Paynment.GetTypes();
+            foreach(string t in types)
+            {
+                Console.WriteLine(t);
+            }
 
             Console.ReadKey();
 

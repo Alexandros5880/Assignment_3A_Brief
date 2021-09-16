@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="PaynmentsStractural.BankTransfer">
-    <Position X="0.5" Y="3.75" Width="1.5" />
+    <Position X="0.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>BankTransfer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PaynmentsStractural.Card" Collapsed="true">
-    <Position X="5" Y="3.75" Width="1.5" />
+    <Position X="5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Card.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PaynmentsStractural.Cash" Collapsed="true">
-    <Position X="7.5" Y="3.75" Width="1.5" />
+    <Position X="7.5" Y="4" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -25,25 +25,25 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PaynmentsStractural.CreditCard" Collapsed="true">
-    <Position X="5.75" Y="5.25" Width="1.5" />
+    <Position X="5.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CreditCard.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PaynmentsStractural.DebitCard" Collapsed="true">
-    <Position X="4" Y="5.25" Width="1.5" />
+    <Position X="4" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>DebitCard.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PaynmentsStractural.IBAN" Collapsed="true">
-    <Position X="0.5" Y="5.5" Width="1.5" />
+    <Position X="0.5" Y="5.75" Width="1.5" />
     <InheritanceLine Type="PaynmentsStractural.BankTransfer" FixedToPoint="true">
       <Path>
-        <Point X="1.25" Y="5.175" />
-        <Point X="1.25" Y="5.5" />
+        <Point X="1.25" Y="5.425" />
+        <Point X="1.25" Y="5.75" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -64,20 +64,20 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Paynment.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Left" Position="0.1" />
   </Class>
   <Class Name="PaynmentsStractural.PayPal" Collapsed="true">
-    <Position X="2.5" Y="3.75" Width="1.5" />
+    <Position X="2.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PayPal.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PaynmentsStractural.WebPaynment">
-    <Position X="9.75" Y="3.75" Width="1.5" />
+    <Position X="9.75" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>WebPaynment.cs</FileName>
