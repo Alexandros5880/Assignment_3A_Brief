@@ -28,7 +28,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PaynmentsStractural.CreditCard" Collapsed="true">
-    <Position X="5.75" Y="5.5" Width="1.5" />
+    <Position X="6" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CreditCard.cs</FileName>
@@ -81,7 +81,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PaynmentsStractural.GetPaynment">
-    <Position X="7.75" Y="0.75" Width="1.75" />
+    <Position X="7.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAIAAAAgAAAAAAAABAAAAABAAQAAAAAAAAAAEAAEA=</HashCode>
       <FileName>GetPaynment.cs</FileName>
