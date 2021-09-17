@@ -7,25 +7,22 @@ using PaynmentsStractural;
 
 namespace ProductsStractural
 {
-    public abstract class Product : IProduct
+    public abstract class Product
     {
+        public string Type { get; set; }
         public int Id { get; set; }
-        public List<Paynment> PaynmentMethods { get; private set; } = new List<Paynment>();
-        public bool AddPaynmentMethod(Paynment paynment)
+        public Product()
         {
-            if(!this.PaynmentMethods.Any(item => item.Type == paynment.Type))
-            {
-                this.PaynmentMethods.Add(paynment);
-            }
-            return this.PaynmentMethods.Any(item => item.Type == paynment.Type);
+            this.Type = this.GetType().Name;
         }
-        public bool RemovePaynmentMethod(Paynment paynment)
+        public Product(int id)
         {
-            if(this.PaynmentMethods.Any(item => item.Type == paynment.Type))
-            {
-                this.PaynmentMethods.Remove(paynment);
-            }
-            return this.PaynmentMethods.Any(item => item.Type == paynment.Type);
+            this.Id = id;
+            this.Type = this.GetType().Name;
+        }
+        public override string ToString()
+        {
+            return $"ID[{this.Id}] --> {this.Type} ";
         }
     }
 }

@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace PaynmentsStractural
 {
-    internal abstract class BankTransfer : Paynment
+    internal class BankTransfer : Paynment
     {
+        public string Iban { get; set; }
+
         public void Recceipt()
         {
 

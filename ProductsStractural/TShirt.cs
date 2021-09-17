@@ -7,21 +7,18 @@ using PaynmentsStractural;
 
 namespace ProductsStractural
 {
-    public class TShirt : Cloth
+    internal class TShirt : Cloth
     {
-        public TShirt(Color color, Size size, Fabric fabric, string brand) : 
-            base(color, size, fabric, brand)
+        public TShirt(string brand, Color color, Size size, Fabric fabric) : 
+            base(brand, color, size, fabric)
         {
             
         }
-        public override string ToString()
+
+        public TShirt(int id, string brand, Color color, Size size, Fabric fabric) :
+            base(id, brand, color, size, fabric)
         {
-            string value = $"T-Shirt: '{this.Brand}' - '{this.Color.Name}' - '{this.Size.Name}' - '{this.Fabric.Name}'";
-            foreach(Paynment paynment in this.PaynmentMethods)
-            {
-                value += $" - '{paynment.ToString()}'";
-            }
-            return value;
+
         }
     }
 }

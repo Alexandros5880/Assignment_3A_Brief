@@ -8,7 +8,7 @@ namespace ProductsStractural
 {
     public class Size
     {
-        public int Id { get; set; }
+        public int Id { get; private set; }
         public string Name { get; set; }
 
         public Size(int id, string name)

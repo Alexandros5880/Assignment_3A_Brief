@@ -6,7 +6,7 @@
   <Class Name="PaynmentsStractural.BankTransfer">
     <Position X="0.5" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAACAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>BankTransfer.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -41,13 +41,6 @@
       <FileName>DebitCard.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PaynmentsStractural.IBAN" Collapsed="true">
-    <Position X="0.5" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IBAN.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="PaynmentsStractural.Paynment">
     <Position X="5" Y="0.5" Width="1.5" />
     <Compartments>
@@ -76,14 +69,14 @@
   <Class Name="PaynmentsStractural.WebPaynment">
     <Position X="9.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
       <FileName>WebPaynment.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PaynmentsStractural.GetPaynment">
     <Position X="7.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAgAAAAAAAABAAAAABAAQAAAAAAAAAAEAAEA=</HashCode>
+      <HashCode>AAAAIAAAAAAAAAAAAABAAAAABAAQAAAAAAAAAAEAAEA=</HashCode>
       <FileName>GetPaynment.cs</FileName>
     </TypeIdentifier>
   </Class>

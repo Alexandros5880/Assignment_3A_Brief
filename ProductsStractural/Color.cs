@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ProductsStractural
 {
-    public class Color
+    internal class Color
     {
-        public int Id { get; set; }
+        public int Id { get;  private set; }
         public string Name { get; set; }
         public string Hex { get; set; }
 
@@ -21,8 +22,7 @@ namespace ProductsStractural
 
         public override string ToString()
         {
-            return $"ID[{this.Id}] Name: {this.Name} Hex: {this.Hex}";
+            return $"ID [{this.Id}] --> {this.Name}: {this.Hex}";
         }
-
     }
 }

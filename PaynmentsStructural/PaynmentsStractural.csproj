@@ -46,7 +46,6 @@
     <Compile Include="CreditCard.cs" />
     <Compile Include="DebitCard.cs" />
     <Compile Include="GetPaynment.cs" />
-    <Compile Include="IBAN.cs" />
     <Compile Include="IPaynment.cs" />
     <Compile Include="BankTransfer.cs" />
     <Compile Include="Paynment.cs" />
@@ -55,7 +54,7 @@
     <Compile Include="WebPaynment.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="PaynmentDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

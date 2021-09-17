@@ -23,11 +23,6 @@ namespace PaynmentsStractural
             return types.ToArray();
         }
 
-        public static Paynment GetIBAN()
-        {
-            return new IBAN();
-        }
-
         public static Paynment GetPayPal()
         {
             return new PayPal();
