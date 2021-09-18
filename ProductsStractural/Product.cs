@@ -31,12 +31,12 @@ namespace ProductsStractural
             this.LoadPaynments();
         }
 
-        internal virtual void SetPaynment(int index)
+        internal void SetPaynment(int index)
         {
             this.SelectedPaynment = this.Paynments.ToList()[index];
         }
 
-        internal virtual Paynment GetPaynment()
+        internal Paynment GetPaynment()
         {
             return this.SelectedPaynment;
         }
