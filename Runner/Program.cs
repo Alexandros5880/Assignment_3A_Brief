@@ -4,7 +4,6 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using PaynmentsStractural;
 using ProductsStractural;
 
 namespace Runner
@@ -13,36 +12,71 @@ namespace Runner
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Create A Product:\n");
 
-            Paynment paynment_1 = GetPaynment.GetPayPal();
-            Paynment paynment_2 = GetPaynment.GetDebitCard();
-            Paynment paynment_3 = GetPaynment.GetCreditCard();
-            Paynment paynment_4 = GetPaynment.GetCash();
-            Paynment paynment_5 = GetPaynment.GetWebPaynment();
+            // Product Generator Object
+            ProductGenerator pGenarator = new ProductGenerator();
 
-            Console.WriteLine( paynment_1.ToString() );
-            Console.WriteLine( paynment_2.ToString() );
-            Console.WriteLine( paynment_3.ToString() );
-            Console.WriteLine( paynment_4.ToString() );
-            Console.WriteLine( paynment_5.ToString() );
+            // Create a Product
+            Product tshirt = pGenarator.CreateTShirt(1, "NOTYCA");
 
+            // Set Brand
+            pGenarator.SetBrand(tshirt, "NOTYCA");
+
+            // Select Color
+            int counter = 0;
+            foreach (ColorValues c in Enum.GetValues(typeof(ColorValues)))
+            {
+                Console.WriteLine($"Index[{counter}] --> {c}");
+                counter++;
+            }
+            Console.Write("\nSelect Color By Index: ");
+            int index = int.Parse(Console.ReadLine());
+            pGenarator.SetColor(tshirt, index);
 
             Console.WriteLine("\n");
-            
-            ProductGenerator pGenarator = new ProductGenerator();
-            Product tshirt = pGenarator.CreateTShirt(
-                1,
-                "NOTYCA", 
-                ProductGenerator.ColorValues.INDIGO, 
-                ProductGenerator.SizeValues.L,
-                ProductGenerator.FabricValues.SILK
-            );
+
+            // Select Size
+            counter = 0;
+            foreach (SizeValues s in Enum.GetValues(typeof(SizeValues)))
+            {
+                Console.WriteLine($"Index[{counter}] --> {s}");
+                counter++;
+            }
+            Console.Write("\nSelect Size By Index: ");
+            index = int.Parse(Console.ReadLine());
+            pGenarator.SetSize(tshirt, index);
+
+            Console.WriteLine("\n");
+
+            // Select Fabric
+            counter = 0;
+            foreach (FabricValues f in Enum.GetValues(typeof(FabricValues)))
+            {
+                Console.WriteLine($"Index[{counter}] --> {f}");
+                counter++;
+            }
+            Console.Write("\nSelect Fabric By Index: ");
+            index = int.Parse(Console.ReadLine());
+            pGenarator.SetFabric(tshirt, index);
+
+            Console.WriteLine("\n");
+
+            // Select Paynment Method
+            counter = 0;
+            foreach(ProductPaynments p in Enum.GetValues(typeof(ProductPaynments)))
+            {
+                Console.WriteLine($"Index[{counter}] --> {p}");
+                counter++;
+            }
+            Console.Write("\nSelect Paynment Method By Index: ");
+            index = int.Parse(Console.ReadLine());
+            pGenarator.SetPaynment(tshirt, index);
+
+            Console.WriteLine($"\nSelected Paynment: {pGenarator.GetPaynment(tshirt)}\n");
             Console.WriteLine(tshirt.ToString());
 
-
-
             Console.ReadKey();
-
         }
     }
 }

@@ -46,13 +46,6 @@
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
-    <NestedTypes>
-      <Enum Name="PaynmentsStractural.Paynment.CURRENCY" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Paynment.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Paynment.cs</FileName>
@@ -81,7 +74,7 @@
     </TypeIdentifier>
   </Class>
   <Interface Name="PaynmentsStractural.IPaynment" Collapsed="true">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+    <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IPaynment.cs</FileName>

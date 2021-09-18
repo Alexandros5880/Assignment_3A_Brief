@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProductsStractural
 {
-    internal class Color
+    public class Color
     {
         public int Id { get;  private set; }
         public string Name { get; set; }

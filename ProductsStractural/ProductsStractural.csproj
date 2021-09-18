@@ -44,6 +44,7 @@
     <Compile Include="Cloth.cs" />
     <Compile Include="Color.cs" />
     <Compile Include="Fabric.cs" />
+    <Compile Include="ICloth.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +60,5 @@
   <ItemGroup>
     <None Include="ProductsDiagram.cd" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
