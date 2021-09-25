@@ -25,6 +25,7 @@ namespace Products.Servicies
         public bool Remove(Size size)
         {
             this.Sizes.Remove(size);
+            size.Dispose();
             return this.Sizes.Any(s => s.Id == size.Id) ? false : true;
         }
         public override void Dispose(bool disposing)

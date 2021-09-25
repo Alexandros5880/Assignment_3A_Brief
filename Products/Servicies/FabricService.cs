@@ -25,6 +25,7 @@ namespace Products.Servicies
         public bool Remove(Fabric fabric)
         {
             this.Fabrics.Remove(fabric);
+            fabric.Dispose();
             return this.Fabrics.Any(s => s.Id == fabric.Id) ? false : true;
         }
         public override void Dispose(bool disposing)

@@ -24,6 +24,7 @@ namespace Products.Servicies
         public bool Remove(Color color)
         {
             this.Colors.Remove(color);
+            color.Dispose();
             return this.Colors.Any(s => s.Id == color.Id) ? false : true;
         }
         public override void Dispose(bool disposing)

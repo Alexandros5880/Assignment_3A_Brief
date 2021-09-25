@@ -20,6 +20,7 @@ namespace Products
         public bool Remove(Product product)
         {
             this.Products.Remove(product);
+            product.Dispose();
             return this.Products.Any(s => s.Id == product.Id) ? false : true;
         }
         public override void Dispose(bool disposing)
