@@ -9,7 +9,7 @@ namespace Products
 {
     public interface ICreateService<T> where T : class
     {
-        T CreateProduct();
+        T Create();
         bool Save(T product);
         bool Remove(T product);
     }

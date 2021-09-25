@@ -14,5 +14,18 @@ namespace Products.Products
         public static FabricService FabricsService { get; private set; } = new FabricService();
         public Color SelectedColor { get; set; }
         public Fabric SelectedFabric { get; set; }
+        public override void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    this.SelectedColor.Dispose();
+                    this.SelectedFabric.Dispose();
+                    base.Dispose(disposing);
+                }
+                this.disposedValue = true;
+            }
+        }
     }
 }

@@ -9,7 +9,7 @@ namespace Products
 {
     public class TShirtService : ProductService
     {
-        public override Product CreateProduct()
+        public override Product Create()
         {
             TShirt tshirt = new TShirt();
             tshirt.Id = HellperClass.GenerateID();

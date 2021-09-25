@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="CFSModels\Color.cs" />
     <Compile Include="CFSModels\Fabric.cs" />
+    <Compile Include="MakeItDisposable.cs" />
     <Compile Include="CFSModels\Size.cs" />
     <Compile Include="HellperClass.cs" />
     <Compile Include="Servicies\ColorService.cs" />
