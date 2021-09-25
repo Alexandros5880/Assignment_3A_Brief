@@ -4,7 +4,8 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using ProductsStractural;
+using Products;
+
 
 namespace Runner
 {
@@ -12,6 +13,54 @@ namespace Runner
     {
         static void Main(string[] args)
         {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /*
             Console.WriteLine("Create A Product:\n");
 
             // Product Generator Object
@@ -75,6 +124,9 @@ namespace Runner
 
             Console.WriteLine($"\nSelected Paynment: {pGenarator.GetPaynment(tshirt)}\n");
             Console.WriteLine(tshirt.ToString());
+            */
+
+
 
             Console.ReadKey();
         }
