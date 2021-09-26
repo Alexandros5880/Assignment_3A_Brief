@@ -41,21 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Card.cs" />
-    <Compile Include="Cash.cs" />
-    <Compile Include="CreditCard.cs" />
-    <Compile Include="DebitCard.cs" />
+    <Compile Include="Models\Card.cs" />
+    <Compile Include="Models\Cash.cs" />
+    <Compile Include="Models\CreditCard.cs" />
+    <Compile Include="Models\DebitCard.cs" />
     <Compile Include="GetPaynment.cs" />
-    <Compile Include="IPaynment.cs" />
-    <Compile Include="BankTransfer.cs" />
-    <Compile Include="Paynment.cs" />
-    <Compile Include="PayPal.cs" />
+    <Compile Include="Models\IPaynment.cs" />
+    <Compile Include="Models\BankTransfer.cs" />
+    <Compile Include="Models\Paynment.cs" />
+    <Compile Include="Models\PayPal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebPaynment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
-    <None Include="PaynmentDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PaynmentsStractural;
 
 namespace Products.Products
 {
@@ -11,6 +12,7 @@ namespace Products.Products
     {
         public string Id { get; set; }
         public string Type { get; private set; }
+        private Paynment _paynment;
         public Product()
         {
             this.Type = this.GetType().Name;

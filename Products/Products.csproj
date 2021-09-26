@@ -46,9 +46,11 @@
     <Compile Include="MakeItDisposable.cs" />
     <Compile Include="CFSModels\Size.cs" />
     <Compile Include="HellperClass.cs" />
+    <Compile Include="ProductsModels\Jacket.cs" />
     <Compile Include="Servicies\ColorService.cs" />
     <Compile Include="Servicies\FabricService.cs" />
     <Compile Include="Servicies\ICreateService.cs" />
+    <Compile Include="Servicies\JacketService.cs" />
     <Compile Include="Servicies\ProductService.cs" />
     <Compile Include="ProductsModels\IProduct.cs" />
     <Compile Include="ProductsModels\Clothes.cs" />
@@ -60,6 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PaynmentsStructural\PaynmentsStractural.csproj">
+      <Project>{a043b635-972c-434c-abe3-1a8b133149b1}</Project>
+      <Name>PaynmentsStractural</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

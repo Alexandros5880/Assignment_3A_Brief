@@ -9,20 +9,22 @@ namespace PaynmentsStractural
 {
     public class GetPaynment
     {
-
-        public static string[] GetPaynmentTypes()
+        public static int HelpTermSelectPaynment()
         {
-            Type[] myTypes = (Type[])Assembly.GetAssembly(typeof(Paynment)).GetTypes().Where(
-                    TheType => TheType.IsClass && !TheType.IsAbstract && TheType.IsSubclassOf(typeof(Paynment))
-                ).ToArray();
-            List<string> types = new List<string>();
-            foreach (Type type in myTypes)
-            {
-                types.Add(type.Name);
-            }
-            return types.ToArray();
+            int count = 0;
+            Paynment.All.ForEach(t => { Console.WriteLine($"Index[{count++}]: {t.Name}"); });
+            return int.Parse(Console.ReadLine());
+        }
+        public static List<System.Type> GetPaynments()
+        {
+            return Paynment.All;
+        }
+        public static Paynment SelectPaynment(int index)
+        {
+            return (Paynment)Activator.CreateInstance(Paynment.All[index]);
         }
 
+        /*
         public static Paynment GetPayPal()
         {
             return new PayPal();
@@ -48,5 +50,29 @@ namespace PaynmentsStractural
             return new WebPaynment();
         }
 
+        public static void PrintTypesPlus()
+        {
+            Console.WriteLine($"SubClasses Count: {Paynment.All.Count}");
+            foreach (System.Type p in Paynment.All)
+            {
+                Console.WriteLine($"\n\n{p.Name}:");
+                // var obj = Activator.CreateInstance(p);
+                foreach (MethodInfo method in p.GetMethods())
+                {
+                    Console.WriteLine($"    {method.Name}()");
+                    if (method.GetParameters().Length > 0)
+                    {
+                        Console.Write("        Parameters: ");
+                        foreach (ParameterInfo pa in method.GetParameters())
+                        {
+                            Console.Write(pa.Name + ", ");
+                        }
+                        Console.WriteLine("");
+                    }
+                    //method.Invoke(obj);
+                }
+            }
+        }
+        */
     }
 }

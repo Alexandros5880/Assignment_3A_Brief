@@ -8,6 +8,9 @@ namespace PaynmentsStractural
 {
     internal class Cash : Paynment
     {
-        
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }
